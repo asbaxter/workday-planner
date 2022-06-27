@@ -4,12 +4,13 @@ function saveTask(){
 
     buttonEl.click(function(){
 
-        task = document.getElementsByClassName('.description').value;
+        let task = document.querySelector(".description").value;
+        let time = $(this).parent().attr("id");
+
+        console.log(time);
         console.log(task);
 
-
-        
-
+        localStorage.setItem(time, task);
 
     })
 };
