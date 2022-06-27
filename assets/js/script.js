@@ -1,9 +1,16 @@
 function saveTask(){
     buttonEl = $(".saveBtn");
 
+
     buttonEl.click(function(){
 
-        console.log("tasks");
+        task = document.getElementsByClassName('.description').value;
+        console.log(task);
+
+
+        
+
+
     })
 };
 
