@@ -1,3 +1,6 @@
+let currentDay = document.getElementById("currentDay")
+currentDay.textContent = moment().format("MMM Do YY");
+
 function saveTask(){
     buttonEl = $(".saveBtn");
 
@@ -110,7 +113,7 @@ function time(){
     if (hour === 16){
         let currentTime = document.getElementById("16");
         currentTime.classList.add("present");
-        timeSlot = 9;
+        timeSlot = 16;
     }
     else if (timeSlot < hour){
         let currentTime = document.getElementById("16");
